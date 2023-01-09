@@ -30,7 +30,7 @@ export default function Topview() {
       <nav className="navbar navbar-expand navbar-dark bg-dark">
         <div className=" container-fluid">
           {currentUser ? (
-            <Link className="navbar-brand" to="/homepage">
+            <Link className="navbar-brand" to="/showtable">
               <img
                 src={HKUST_ICON}
                 alt="Logo"
@@ -55,7 +55,7 @@ export default function Topview() {
           <div className="navbar-nav mr-auto">
             {currentUser && (
               <li className="nav-item">
-                <Link to={"/homepage"} className="nav-link">
+                <Link to={"/showtable"} className="nav-link">
                   Table
                 </Link>
               </li>
@@ -93,7 +93,7 @@ export default function Topview() {
           ) : (
             <div className="navbar-nav ml-auto">
               <li className="nav-item">
-                <Link to={"/"} className="nav-link">
+                <Link to={"/login"} className="nav-link">
                   Login
                 </Link>
               </li>

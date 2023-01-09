@@ -4,7 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import UserService from "../Service/UserService";
 import AuthService from "../Service/AuthService";
 
-export default function HomePage() {
+export default function ShowTable() {
   const [user, setUsers] = useState([]);
   const [showModeratorBoard, setShowModeratorBoard] = useState(false);
   const [showAdminBoard, setShowAdminBoard] = useState(false);

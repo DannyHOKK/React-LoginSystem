@@ -12,7 +12,7 @@ export default function LoginPage() {
     e.preventDefault();
     console.log("OKOK");
     AuthService.login(username, password).then((response) => {
-      navigation("/homepage");
+      navigation("/showtable");
       window.location.reload();
 
       console.log(response.data.token);
